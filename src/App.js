@@ -58,7 +58,7 @@ class App extends React.Component {
       <div className="app">
         <h1>Todo App</h1>
         <TodoForm
-          submit={ this.addTodo }
+          add={ this.addTodo }
           clear={ this.clear }
         />
         <TodoList

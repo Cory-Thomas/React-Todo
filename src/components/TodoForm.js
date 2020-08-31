@@ -9,8 +9,7 @@ class TodoForm extends React.Component {
     handleSubmit = event => {
       event.preventDefault();
       event.target.reset()
-      this.props.submit( this.state.task );
-      
+      this.props.add( this.state.task );
     };
 
     handleChange = event => {
