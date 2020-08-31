@@ -1,3 +1,23 @@
+.app {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.task {
+    width: 15%;
+    margin: 2% auto;
+    background: blue;
+    color: white;
+    padding: 5%;
+    text-align: center
+}
+
 .complete {
     text-decoration: line-through;
 }

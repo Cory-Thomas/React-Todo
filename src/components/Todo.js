@@ -7,7 +7,7 @@ class TodoItem extends React.Component {
       const { task, toggle } = this.props;
 
       return (
-        <section>
+        <section className="task">
             <div
                 className={ task.completed ? "complete" : null }
                 onClick={ () => {

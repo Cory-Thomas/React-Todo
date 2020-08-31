@@ -8,10 +8,9 @@ class TodoForm extends React.Component {
   
     handleSubmit = event => {
       event.preventDefault();
+      event.target.reset()
+      this.props.submit( this.state.task );
       
-      this.props.submit( this.state.task, () => {
-        this.setState({ task: "" });
-      });
     };
 
     handleChange = event => {
@@ -26,7 +25,7 @@ class TodoForm extends React.Component {
     render() {
       return (
         <div>
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit.bind(this)}>
             <label htmlFor="task">
                 Create a Task: 
             </label>

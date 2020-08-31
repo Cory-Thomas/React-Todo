@@ -31,7 +31,7 @@ class App extends React.Component {
     };
 
     this.setState({ 
-      todo: [ ...this.state.todo, addedTask ] 
+      todo: [ ...this.state.todo, addedTask ]
     });
   };
 
@@ -55,7 +55,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <h1>Todo App</h1>
         <TodoForm
           submit={ this.addTodo }

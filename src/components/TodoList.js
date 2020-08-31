@@ -2,6 +2,7 @@
 // feel free to change this component.js into TodoList.js
 import React from 'react';
 import Todo from './Todo';
+import './Todo.css';
 
 class TodoList extends React.Component {
     render() {
@@ -14,6 +15,7 @@ class TodoList extends React.Component {
                 key={ task.id } 
                 task={ task } 
                 toggle={ toggle }
+                className='task'
             />;
           })}
         </div>
